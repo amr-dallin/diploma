@@ -45,7 +45,7 @@ class Graduate extends Entity
         'group' => true,
     ];
 
-    protected $_virtual = ['full_name_en', 'full_name_uz'];
+    protected $_virtual = ['full_name_en', 'full_name_uz', 'num'];
 
     protected function _getFullNameEn()
     {
@@ -55,5 +55,15 @@ class Graduate extends Entity
     protected function _getFullNameUz()
     {
         return "{$this->last_name_uz} {$this->first_name_uz} {$this->second_name_uz}";
+    }
+
+    protected function _getNum()
+    {
+        $number = $this->number;
+        if (strlen((string)$number) < 6) {
+            $number = sprintf('%06d', $number);
+        }
+
+        return '№ ' . $number;
     }
 }

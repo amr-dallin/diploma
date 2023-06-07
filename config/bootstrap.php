@@ -226,20 +226,16 @@ TypeFactory::map('time', StringType::class);
 Configure::write('CakePdf', [
     'engine' => [
         'options' => [
-            'print-media-type' => false,
+            //'print-media-type' => false,
             'images' => true,
         ],
         'className' => 'CakePdf.WkHtmlToPdf'
     ],
     'margin' => [
-        'bottom' => 14,
-        'left' => 10,
-        'right' => 10,
-        'top' => 14
+        'bottom' => 0,
+        'left' => 0,
+        'right' => 0,
+        'top' => 0
     ],
-
-    'pageSize' => 'A4',
-    // 'orientation' => 'landscape',
-
     'download' => false
 ]);
