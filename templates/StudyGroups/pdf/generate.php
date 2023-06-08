@@ -64,7 +64,7 @@
             </div>
         </td>
         <td style="width: 78%; vertical-align: top;">
-            <div style="padding: 16mm; padding-top: 30mm; font-weight: 900; font-size: 22px;">
+            <div style="padding: 16mm; padding-top: 30mm; font-weight: 900; font-size: 25px;">
                 <div style="color: red; margin-bottom: 30mm;"><?= $graduate->num ?></div>
                 <div style="text-align: center; margin-bottom: 35mm;">
                     <div style="text-transform: uppercase; font-size: 35px; margin-bottom: 20mm;">TOSHKENT SHAHRIDAGI PUCHON UNIVERSITETI</div>
