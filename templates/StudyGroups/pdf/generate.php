@@ -14,8 +14,10 @@
 <?php foreach($studyGroup->graduates as $graduate): ?>
 <table class="page" cellspacing="0" cellpadding="0">
     <tr>
-        <td style="background-color: #ceb570; width: 22%;">
-            <?= $this->Html->image('logo.png', ['width' => '60%', 'fullBase' => true]); ?>
+        <td style="background-color: #ceb570; width: 22%; vertical-align: top; text-align: center;">
+            <div style="padding-top: 15mm;">
+                <?= $this->Html->image('logo.png', ['width' => '120px', 'fullBase' => true]); ?>
+            </div>
         </td>
         <td style="width: 78%; vertical-align: top;">
             <div style="padding: 16mm; padding-top: 30mm; font-weight: 900; font-size: 25px;">
@@ -56,8 +58,10 @@
 
 <table class="page" cellspacing="0" cellpadding="0">
     <tr>
-        <td style="background-color: #ceb570; width: 22%;">
-            <?= $this->Html->image('logo.png', ['width' => '60%', 'fullBase' => true]); ?>
+        <td style="background-color: #ceb570; width: 22%; vertical-align: top; text-align: center;">
+            <div style="padding-top: 15mm;">
+                <?= $this->Html->image('logo.png', ['width' => '120px', 'fullBase' => true]); ?>
+            </div>
         </td>
         <td style="width: 78%; vertical-align: top;">
             <div style="padding: 16mm; padding-top: 30mm; font-weight: 900; font-size: 22px;">

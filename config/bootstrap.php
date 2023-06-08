@@ -226,7 +226,7 @@ TypeFactory::map('time', StringType::class);
 Configure::write('CakePdf', [
     'engine' => [
         'options' => [
-            //'print-media-type' => false,
+            'print-media-type' => false,
             'images' => true,
         ],
         'className' => 'CakePdf.WkHtmlToPdf'
