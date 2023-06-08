@@ -16,7 +16,7 @@
     <tr>
         <td style="background-color: #ceb570; width: 22%; vertical-align: top; text-align: center;">
             <div style="padding-top: 15mm;">
-                <?= $this->Html->image('logo.png', ['width' => '120px', 'fullBase' => true]); ?>
+                <img src="<?= WWW_ROOT ?>img/logo.png" width="90" />
             </div>
         </td>
         <td style="width: 78%; vertical-align: top;">
@@ -60,7 +60,7 @@
     <tr>
         <td style="background-color: #ceb570; width: 22%; vertical-align: top; text-align: center;">
             <div style="padding-top: 15mm;">
-                <?= $this->Html->image('logo.png', ['width' => '120px', 'fullBase' => true]); ?>
+                <img src="<?= WWW_ROOT ?>img/logo.png" width="90" />
             </div>
         </td>
         <td style="width: 78%; vertical-align: top;">

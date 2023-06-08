@@ -228,6 +228,7 @@ Configure::write('CakePdf', [
         'options' => [
             'print-media-type' => false,
             'images' => true,
+            'enable-local-file-access' => true
         ],
         'className' => 'CakePdf.WkHtmlToPdf'
     ],
