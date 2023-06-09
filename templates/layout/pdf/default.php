@@ -13,7 +13,14 @@
                 margin: 0;
                 padding: 0;
                 text-rendering: optimizeLegibility;
+                font-family: Akademitscheskaya;
             }
+
+            @font-face {
+                font-family: Akademitscheskaya;
+                src: url(<?= WWW_ROOT ?>font/Akademitscheskaya.ttf);
+            }
+
             table {border: none;}
         </style>
     </head>

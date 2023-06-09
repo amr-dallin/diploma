@@ -20,7 +20,7 @@
             </div>
         </td>
         <td style="width: 78%; vertical-align: top;">
-            <div style="padding: 16mm; padding-top: 30mm; font-weight: 900; font-size: 25px;">
+            <div style="padding: 12mm; padding-top: 20mm; font-weight: 700; font-size: 25px;">
                 <div style="color: red; margin-bottom: 40mm;"><?= $graduate->num ?></div>
                 <div style="text-align: center; margin-bottom: 35mm;">
                     <div style="text-transform: uppercase; font-size: 35px; margin-bottom: 15mm;">BUCHEON UNIVERSITY IN TASHKENT</div>
@@ -64,7 +64,7 @@
             </div>
         </td>
         <td style="width: 78%; vertical-align: top;">
-            <div style="padding: 16mm; padding-top: 30mm; font-weight: 900; font-size: 25px;">
+            <div style="padding: 12mm; padding-top: 20mm; font-weight: 700; font-size: 25px;">
                 <div style="color: red; margin-bottom: 30mm;"><?= $graduate->num ?></div>
                 <div style="text-align: center; margin-bottom: 35mm;">
                     <div style="text-transform: uppercase; font-size: 35px; margin-bottom: 20mm;">TOSHKENT SHAHRIDAGI PUCHON UNIVERSITETI</div>
@@ -78,7 +78,7 @@
                     <div style="text-transform: uppercase; color: red; margin-bottom: 3mm;">IMTIYOZLI</div>
                     <?php endif; ?>
 
-                    <div style="text-transform: uppercase; margin-bottom: 1mm; font-size: 36px;">BAKALAVR</div>
+                    <div style="text-transform: uppercase; margin-bottom: 1mm; font-size: 30px;">BAKALAVR</div>
                     <div style="text-transform: uppercase; margin-bottom: 15mm;">DARAJASI BERILDI</div>
 
                     <div style="font-size: 21px; margin-bottom: 30mm;">

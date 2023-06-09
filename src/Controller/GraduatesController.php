@@ -33,15 +33,10 @@ class GraduatesController extends AppController
             $graduate->set('study_group_id', $studyGroupId);
 
             $graduateLast = $this->Graduates->find()
-                ->innerJoinWith('StudyGroups.YearFaculties', function ($q) use ($studyGroup) {
-                    return $q->where([
-                        'YearFaculties.release_year_id' => $studyGroup->year_faculty->release_year_id
-                    ]);
-                })
                 ->order(['Graduates.number' => 'DESC'])
                 ->first();
 
-            $number = 1;
+            $number = 654;
             if (!empty($graduateLast)) {
                 $number = $graduateLast->number + 1;
             }
