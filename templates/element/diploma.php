@@ -12,13 +12,10 @@
 
 <table class="page" cellspacing="0" cellpadding="0">
     <tr>
-        <td style="background-color: #ceb570; width: 22%; vertical-align: top; text-align: center;">
-            <div style="padding-top: 15mm;">
-                <img src="<?= WWW_ROOT ?>img/logo.png" width="90" />
-            </div>
+        <td style="width: 17%; vertical-align: top; text-align: center;">
         </td>
-        <td style="width: 78%; vertical-align: top;">
-            <div style="padding: 12mm; padding-top: 20mm; font-weight: 700; font-size: 25px;">
+        <td style="width: 83%; vertical-align: top;">
+            <div style="padding: 17mm; padding-top: 20mm; font-weight: 700; font-size: 25px;">
                 <div style="color: red; margin-bottom: 40mm;"><?= $graduate->num ?></div>
                 <div style="text-align: center; margin-bottom: 35mm;">
                     <div style="text-transform: uppercase; font-size: 35px; margin-bottom: 15mm;">BUCHEON UNIVERSITY IN TASHKENT</div>
@@ -48,7 +45,6 @@
 
                 <div style="font-size: 22px;"><?= "Reg.No: BUT {$studyGroup->year_faculty->release_year->year}-{$graduate->number}" ?></div>
             </div>
-            
         </td>
     </tr>
 </table>
@@ -56,13 +52,11 @@
 
 <table class="page" cellspacing="0" cellpadding="0">
     <tr>
-        <td style="background-color: #ceb570; width: 22%; vertical-align: top; text-align: center;">
-            <div style="padding-top: 15mm;">
-                <img src="<?= WWW_ROOT ?>img/logo.png" width="90" />
-            </div>
+        <td style="width: 17%; vertical-align: top; text-align: center;">
+
         </td>
-        <td style="width: 78%; vertical-align: top;">
-            <div style="padding: 12mm; padding-top: 20mm; font-weight: 700; font-size: 25px;">
+        <td style="width: 83%; vertical-align: top;">
+            <div style="padding: 17mm; padding-top: 20mm; font-weight: 700; font-size: 25px;">
                 <div style="color: red; margin-bottom: 30mm;"><?= $graduate->num ?></div>
                 <div style="text-align: center; margin-bottom: 35mm;">
                     <div style="text-transform: uppercase; font-size: 35px; margin-bottom: 20mm;">TOSHKENT SHAHRIDAGI PUCHON UNIVERSITETI</div>

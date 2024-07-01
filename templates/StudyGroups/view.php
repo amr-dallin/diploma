@@ -15,7 +15,7 @@
             <?= $this->Html->link(__('Add graduate'), ['controller' => 'Graduates', 'action' => 'add', $studyGroup->id], ['class' => 'side-nav-item']) ?>
         </div>
     </aside>
-    <div class="column-responsive column-80">
+    <div class="column-responsive column-90">
         <div class="studyGroups view content">
             <h1><?= h($studyGroup->title) ?></h1>
             <table>
@@ -57,25 +57,26 @@
                                 <th style="text-align: right;"><?= __('Actions') ?></th>
                             </tr>
                         </thead>
-                        <?php foreach ($studyGroup->graduates as $graduates) : ?>
+                        <?php foreach ($studyGroup->graduates as $graduate) : ?>
                             <tbody>
                             <tr>
-                                <td style="text-align: center;"><?= h($graduates->number) ?></td>
-                                <td><?= h($graduates->full_name_en) ?></td>
-                                <td><?= h($graduates->full_name_uz) ?></td>
-                                <td style="text-align: center;"><?= $graduates->excellent ? __('Yes') : '' ?></td>
+                                <td style="text-align: center;"><?= h($graduate->number) ?></td>
+                                <td><?= h($graduate->full_name_en) ?></td>
+                                <td><?= h($graduate->full_name_uz) ?></td>
+                                <td style="text-align: center;"><?= $graduate->excellent ? __('Yes') : '' ?></td>
                                 <td style="text-align: center;">
                                     <?php
                                     echo $this->Form->postLink(
-                                        ($graduates->verified ? __('Yes') : __('No')),
-                                        ['controller' => 'Graduates', 'action' => 'verified', $graduates->id],
-                                        ['confirm' => __('Are you sure you want to verified # {0}?', $graduates->id)]
+                                        ($graduate->verified ? __('Yes') : __('No')),
+                                        ['controller' => 'Graduates', 'action' => 'verified', $graduate->id],
+                                        ['confirm' => __('Are you sure you want to verified # {0}?', $graduate->id)]
                                     );
                                     ?>
                                 </td>
                                 <td class="actions" style="text-align: right; font-size: 12px;">
-                                    <?= $this->Html->link(__('Edit'), ['controller' => 'Graduates', 'action' => 'edit', $graduates->id]) ?>
-                                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'Graduates', 'action' => 'delete', $graduates->id], ['confirm' => __('Are you sure you want to delete # {0}?', $graduates->id)]) ?>
+                                    <?= $this->Html->link(__('Print'), ['controller' => 'Graduates', 'action' => 'generate', $graduate->id, '_ext' => 'pdf']) ?>
+                                    <?= $this->Html->link(__('Edit'), ['controller' => 'Graduates', 'action' => 'edit', $graduate->id]) ?>
+                                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'Graduates', 'action' => 'delete', $graduate->id], ['confirm' => __('Are you sure you want to delete # {0}?', $graduate->id)]) ?>
                                 </td>
                             </tr>
                             </tbody>

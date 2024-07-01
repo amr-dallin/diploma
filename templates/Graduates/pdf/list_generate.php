@@ -10,9 +10,11 @@
 }
 </style>
 
-
 <?php
-foreach($studyGroup->graduates as $graduate) {
-    echo $this->element('diploma', compact('graduate', 'studyGroup'));
+foreach($graduates as $graduate) {
+    echo $this->element('diploma', [
+        'graduate' => $graduate,
+        'studyGroup' => $graduate->study_group
+    ]);
 }
 ?>

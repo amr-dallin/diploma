@@ -63,8 +63,11 @@ $(document).ready(function() {
                 <?php if (!empty($releaseYear->year_faculties)) : ?>
                     <?php foreach ($releaseYear->year_faculties as $yearFaculties) : ?>
                         <div class="row">
-                            <div class="column column-50"><h3><?= h($yearFaculties->faculty->title) ?></h3></div>
-                            <div class="column" style="text-align: right;">
+                            <div class="column"><h3><?= h($yearFaculties->faculty->title) ?></h3></div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <?= $this->Html->link(__('Print list'), ['controller' => 'YearFaculties', 'action' => 'listGraduates', $yearFaculties->id, '_ext' => 'pdf'], ['target' => '_blank', 'class' => 'button button-outline']) ?>
                                 <?= $this->Html->link(__('Add group'), ['controller' => 'StudyGroups', 'action' => 'add', $yearFaculties->id], ['class' => 'button button-outline']) ?>
                                 <?= $this->Html->link(__('Edit'), ['controller' => 'YearFaculties', 'action' => 'edit', $yearFaculties->id], ['class' => 'button button-outline']) ?>
                                 <?= $this->Form->postLink(__('Delete'), ['controller' => 'YearFaculties', 'action' => 'delete', $yearFaculties->id], ['class' => 'button', 'confirm' => __('Are you sure you want to delete # {0}?', $yearFaculties->id)]) ?>

@@ -98,6 +98,19 @@ class YearFacultiesController extends AppController
         $this->set(compact('yearFaculty'));
     }
 
+    public function listGraduates($id)
+    {
+        $yearFaculty = $this->YearFaculties->findById($id)
+            ->contain([
+                'Faculties',
+                'ReleaseYears',
+                'StudyGroups.Graduates'
+            ])
+            ->firstOrFail();
+
+        $this->set(compact('yearFaculty'));
+    }
+
     /**
      * Delete method
      *

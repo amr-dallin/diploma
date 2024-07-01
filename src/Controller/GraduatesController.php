@@ -98,6 +98,44 @@ class GraduatesController extends AppController
         return $this->redirect(['controller' => 'StudyGroups', 'action' => 'view', $graduate->study_group_id]);
     }
 
+    public function generate($id)
+    {
+        $graduate = $this->Graduates->findById($id)->firstOrFail();
+        
+        $studyGroup = $this->Graduates->StudyGroups->findById($graduate->study_group_id)
+            ->contain([
+                'YearFaculties' => [
+                    'Faculties',
+                    'ReleaseYears'
+                ]
+            ])
+            ->firstOrFail();
+
+        $this->set(compact('graduate', 'studyGroup'));
+    }
+
+    public function requestList()
+    {
+
+    }
+
+    public function listGenerate()
+    {
+        $list = str_replace(' ', '', $this->request->getQuery('list'));
+        $graduatesNumbers = explode(',', $list);
+
+        $graduates = $this->Graduates->find()
+            ->where(['Graduates.number IN' => $graduatesNumbers])
+            ->contain([
+                'StudyGroups.YearFaculties' => [
+                    'Faculties',
+                    'ReleaseYears'
+                ]
+            ]);
+
+        $this->set(compact('graduates'));
+    }
+
     /**
      * Delete method
      *
