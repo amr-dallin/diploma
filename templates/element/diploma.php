@@ -39,7 +39,7 @@
                 <table style="width: 100%; font-size: 24px; margin-bottom: 40mm;">
                     <tr>
                         <td style="width: 50%;">Rector</td>
-                        <td style="text-align: right">Viktor V. Nam, DSc.</td>
+                        <td style="text-align: right">Shin A.V., DSc.</td>
                     </tr>
                 </table>
 
@@ -80,8 +80,8 @@
 
                 <table style="width: 100%; font-size: 24px; margin-bottom: 40mm;">
                     <tr>
-                        <td style="width: 50%;">Rector</td>
-                        <td style="text-align: right">Viktor V. Nam, DSc.</td>
+                        <td style="width: 50%;">Rektor</td>
+                        <td style="text-align: right">Shin A.V., DSc.</td>
                     </tr>
                 </table>
 
