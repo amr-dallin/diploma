@@ -61,10 +61,10 @@
                 <div style="text-align: center; margin-bottom: 35mm;">
                     <div style="text-transform: uppercase; font-size: 35px; margin-bottom: 20mm;">TOSHKENT SHAHRIDAGI PUCHON UNIVERSITETI</div>
                     <div style="text-transform: uppercase; font-size: 32px; margin-bottom: 20mm;"><?= $graduate->full_name_uz ?></div>
-                    <div style="text-transform: uppercase; margin-bottom: 15mm; font-size: 20px;">BELGILANGAN TALABLARNI TO’LIQ BAJARGANLIGI TASDIQLANDI HAMDA UNGA</div>
+                    <div style="text-transform: uppercase; margin-bottom: 15mm; font-size: 20px;">BELGILANGAN TALABLARNI TO‘LIQ BAJARDI HAMDA UNGA</div>
                     
                     <div style="font-size: 29px; margin-bottom: 3mm;"><?= $studyGroup->year_faculty->faculty->title_print_uz ?></div>
-                    <div style="text-transform: uppercase; margin-bottom: 15mm;">YO’NALISHI BO’YICHA</div>
+                    <div style="text-transform: uppercase; margin-bottom: 15mm;">YO‘NALISHI BO‘YICHA</div>
 
                     <?php if ($graduate->excellent): ?>
                     <div style="text-transform: uppercase; color: red; margin-bottom: 3mm;">IMTIYOZLI</div>
@@ -81,7 +81,7 @@
                 <table style="width: 100%; font-size: 24px; margin-bottom: 40mm;">
                     <tr>
                         <td style="width: 50%;">Rektor</td>
-                        <td style="text-align: right">Shin A.V., DSc.</td>
+                        <td style="text-align: right">DSc., A.V. Shin</td>
                     </tr>
                 </table>
 

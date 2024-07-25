@@ -18,7 +18,7 @@
 
             @font-face {
                 font-family: Akademitscheskaya;
-                src: url(<?= WWW_ROOT ?>font/Akademitscheskaya.ttf);
+                src: url(<?= WWW_ROOT ?>font/EB_Garamond/static/EBGaramond-Bold.ttf);
             }
 
             table {border: none;}
