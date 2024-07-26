@@ -81,7 +81,7 @@
                 <table style="width: 100%; font-size: 24px; margin-bottom: 40mm;">
                     <tr>
                         <td style="width: 50%;">Rektor</td>
-                        <td style="text-align: right">DSc., A.V. Shin</td>
+                        <td style="text-align: right">DSc. A.V. Shin</td>
                     </tr>
                 </table>
 
